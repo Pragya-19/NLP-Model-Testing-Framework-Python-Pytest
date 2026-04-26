@@ -1,5 +1,5 @@
 # 🧠 NLP Model Testing Framework (Python | Pytest | AI/ML QA)
-# 🧠 NLP Model Testing Framework (Python | Pytest | AI/ML QA)
+
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Pytest](https://img.shields.io/badge/Pytest-Automation-green)
