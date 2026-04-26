@@ -55,7 +55,7 @@ NLP-Model-Testing-Framework-Python-Pytest/
 │
 ├── nlp_model/
 
-    │ ├── init.py
+    │ ├── __init__.py
     
     │ ├── sentiment_model.py
     
@@ -63,7 +63,7 @@ NLP-Model-Testing-Framework-Python-Pytest/
 │
 ├── tests/
 
-    │ ├── init.py
+    │ ├── __init__.py
     
     │ ├── test_sentiment_prediction.py
     
