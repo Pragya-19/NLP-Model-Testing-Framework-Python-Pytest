@@ -1,1 +1,4 @@
-
+text,expected_sentiment
+I love this product,positive
+This is bad service,negative
+I am walking in park,neutral
