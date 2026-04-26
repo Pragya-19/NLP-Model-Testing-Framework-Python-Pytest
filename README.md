@@ -47,6 +47,8 @@ It demonstrates how software testing evolves when working with **AI/ML systems**
 
 ## 📁 Project Structure
 
+```text
+Project structure here
 
 NLP-Model-Testing-Framework-Python-Pytest/
 
@@ -115,8 +117,12 @@ python -m pytest -v
 📊 Test Execution Output (Pytest)
 7 passed in 0.06s
 
-📸 Test Execution Screenshot
-<p align="center"> <img src="screenshots/pytest-result.png" width="800"/> </p>
+```md
+## 📸 Test Execution Screenshot
+
+<p align="center">
+  <img src="screenshots/pytest-result.png" width="800"/>
+</p>
 
 🌍 Real-World Relevance
 
