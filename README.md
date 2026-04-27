@@ -120,9 +120,7 @@ python -m pytest -v
 ```md
 ## 📸 Test Execution Screenshot
 
-<p align="center">
-  <img src="screenshots/pytest-result.png" width="800"/>
-</p>
+![Pytest Output](screenshots/pytest-result.png)
 
 🌍 Real-World Relevance
 
