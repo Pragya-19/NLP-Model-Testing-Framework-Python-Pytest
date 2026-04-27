@@ -38,6 +38,14 @@ It is designed to showcase how QA validation works for AI systems such as LLMs a
 - Reusable Validation Logic  
 - Scalable Test Design for ML systems  
 
+## ⚠️ AI Risks Covered
+
+- Hallucination
+- Incorrect predictions
+- Context loss
+- Prompt variation inconsistency
+- Unsafe responses
+
 ---
 
 ## 🛠 Tech Stack
