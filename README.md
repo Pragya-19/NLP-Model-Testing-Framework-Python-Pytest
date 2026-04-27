@@ -22,6 +22,10 @@ Unlike traditional QA, this framework focuses on validating **model outputs**, e
 
 It demonstrates how software testing evolves when working with **AI/ML systems**, where validating predictions is more critical than just testing functionality.
 
+⚠️ Note:
+This project uses a rule-based simulation to demonstrate AI testing concepts.
+It is designed to showcase how QA validation works for AI systems such as LLMs and NLP models.
+
 ---
 
 ## 🔥 Key Features
