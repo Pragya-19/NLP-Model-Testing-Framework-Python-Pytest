@@ -130,23 +130,41 @@ In AI/ML systems, testing is not limited to functionality.
 We need to validate:
 
 Model prediction correctness
+
 Input variability handling
+
 Data-driven validation
+
 Edge case robustness
+
 
 This framework simulates real-world ML validation scenarios, bridging the gap between traditional QA and AI testing.
 
 🎯 What This Project Demonstrates
+
 NLP Model Testing Approach
+
+
 AI/ML Validation Techniques
+
+
 Data-driven QA Strategy
+
+
 Edge Case Handling in AI Systems
+
 Python + Pytest Automation Skills
+
 🚀 Future Enhancements
+
 Integration with real ML models (Scikit-learn / HuggingFace)
+
 Model accuracy metrics validation
+
 Confusion matrix validation
+
 CI/CD integration using GitHub Actions
+
 Prompt-based NLP testing
 
 
