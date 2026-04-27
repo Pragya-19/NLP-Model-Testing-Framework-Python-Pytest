@@ -117,7 +117,7 @@ python -m pytest -v
 📊 Test Execution Output (Pytest)
 7 passed in 0.06s
 
-```md
+
 ## 📸 Test Execution Screenshot
 
 ![Pytest Output](screenshots/pytest-result.png)
