@@ -1,5 +1,6 @@
 # 🧠 NLP Model Testing Framework (Python | Pytest | AI/ML QA)
 
+![CI](https://github.com/Pragya-19/REPO_NAME/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Pytest](https://img.shields.io/badge/Pytest-Automation-green)
 ![NLP](https://img.shields.io/badge/NLP-Model--Testing-purple)
