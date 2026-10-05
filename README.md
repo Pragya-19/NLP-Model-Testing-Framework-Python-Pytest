@@ -38,13 +38,15 @@ It is designed to showcase how QA validation works for AI systems such as LLMs a
 - Reusable Validation Logic  
 - Scalable Test Design for ML systems  
 
-## ⚠️ AI Risks Covered
+## ⚠️ Validation Risks Covered
 
-- Hallucination
-- Incorrect predictions
-- Context loss
-- Prompt variation inconsistency
-- Unsafe responses
+- Incorrect sentiment classification
+- Prediction inconsistency against expected outputs
+- Text preprocessing errors
+- Empty-input handling
+- Numeric-input handling
+- Input-format variation
+- Regression against golden test data
 
 ---
 
@@ -61,78 +63,105 @@ It is designed to showcase how QA validation works for AI systems such as LLMs a
 ## 📁 Project Structure
 
 ```text
-Project structure here
-
 NLP-Model-Testing-Framework-Python-Pytest/
-
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml
 │
 ├── nlp_model/
-
-    │ ├── __init__.py
-    
-    │ ├── sentiment_model.py
-    
-    │ └── text_preprocessor.py
+│   ├── __init__.py
+│   ├── sentiment_model.py
+│   └── text_preprocessor.py
 │
 ├── tests/
-
-    │ ├── __init__.py
-    
-    │ ├── test_sentiment_prediction.py
-    
-    │ ├── test_text_preprocessing.py
-    
-    │ ├── test_edge_cases.py
-    
-    │ └── test_data_driven_sentiment.py
+│   ├── __init__.py
+│   ├── test_sentiment_prediction.py
+│   ├── test_text_preprocessing.py
+│   ├── test_edge_cases.py
+│   └── test_data_driven_sentiment.py
 │
 ├── test_data/
-
-    │ └── sentiment_test_data.csv
+│   └── sentiment_test_data.csv
 │
 ├── screenshots/
-
-    │ └── pytest-result.png
+│   └── pytest-result.png
 │
 ├── requirements.txt
-
 └── README.md
-
+```
 
 ---
 
 ## 🧪 Test Scenarios Covered
 
-### 1️⃣ Sentiment Prediction Testing
+### Sentiment Prediction Validation
+
+The test suite validates positive, negative and neutral sentiment behavior.
 
 ```python
 def test_positive_sentiment():
-    assert predict_sentiment("I love this product") == "positive"
-
-2️⃣ Text Preprocessing Validation
-def test_text_cleaning():
-    assert clean_text("HELLO!!!") == "hello"
-
-3️⃣ Edge Case Testing
-Empty input
-Numeric input
-Mixed-case input
-
-4️⃣ Data-Driven Testing (CSV-Based)
-text,expected_sentiment
-I love this,positive
-This is bad,negative
-
-▶️ How to Run
-pip install -r requirements.txt
-python -m pytest -v
-
-📊 Test Execution Output (Pytest)
-7 passed in 0.06s
-
+    result = predict_sentiment("I am very happy today")
+    assert result == "positive"
 ```
 
-## 📸 Test Execution Screenshot
+### Text Preprocessing
+
+Input normalization is validated before model-style processing.
+
+```python
+def test_text_cleaning():
+    result = clean_text("Hello!!! How are you??")
+    assert result == "hello how are you"
+```
+
+### Edge Cases
+
+Coverage includes:
+
+- Empty input
+- Numeric input
+- Positive text
+- Negative text
+- Neutral text
+
+### Data-Driven Validation
+
+Expected inputs and outputs are maintained in:
+
+```text
+test_data/sentiment_test_data.csv
+```
+
+Example:
+
+```csv
+text,expected_sentiment
+I love this product,positive
+This is bad service,negative
+I am walking in park,neutral
+```
+
+This acts as a small **golden test dataset** for regression validation.
+
+---
+
+## ▶️ Running the Tests
+
+```bash
+pip install -r requirements.txt
+python -m pytest -v
+```
+
+Current execution:
+
+```text
+7 passed
+```
+
+---
+
+## 📸 Test Execution Evidence
 
 ![Pytest Output](screenshots/pytest-result.png)
 
